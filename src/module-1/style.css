@@ -1,0 +1,88 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #2c2c2c;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: 12px;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1260px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-container {
+  max-width: 400px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+  overflow: hidden;
+}
+.card-top {
+  padding: 20px;
+  height: 385px;
+}
+.image-container {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rate-and-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 15px;
+  height: 30px;
+}
+.rate {
+  background-color: #6f64f8;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.price {
+  margin-left: auto;
+}
+.card-bottom {
+  display: flex;
+  height: 45px;
+}
+.card-bottom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card-bottom svg {
+  margin-right: 10px;
+}
+.wishlist {
+  background-color: #ededed;
+  color: #2c2c2c;
+}
+.wishlist:hover {
+  background-color: #c9c9c9;
+}
+.wishlist svg:hover {
+  fill: #db1818;
+}
+.add-to-cart {
+  background-color: #6f64f8;
+  color: #fff;
+}
+.add-to-cart:hover {
+  background-color: #5148c7;
+}
