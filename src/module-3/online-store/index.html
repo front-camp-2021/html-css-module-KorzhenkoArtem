@@ -1,16 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Store</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <title>Online Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-inner">
+        <header class="header">
+          <img src="img/logo.png" alt="logo" />
+          <h1>Online Store</h1>
+        </header>
+        <nav>
+          <div class="breadcrumbs">
+            <a class="breadcrumbs-home" href="#"></a>
+            <span class="breadcrumbs-chevrons"></span>
+            <a class="breadcrumbs-colored" href="#">eCommerce</a>
+            <span class="breadcrumbs-chevrons"></span>
+            <a>Electronics</a>
+          </div>
+        </nav>
+        <main class="main">
+          <aside class="sidebar">
+            <div class="sidebar-filters">
+              <p>Filters</p>
+              <a href="#" class="sidebar-close"><span class="sidebar-shevrons"></span></a>
+            </div>
+            <div class="sidebar-content">
+              <div class="sidebar-content-inner">
+                <h3>Multi Range</h3>
+                <div class="custom-radio">
+                  <input
+                    class="custom-radio-input"
+                    id="multi-range-1"
+                    name="radiobutton"
+                    type="radio"
+                  />
+                  <label class="custom-radio-elem" for="multi-range-1"></label>
+                  <label class="custom-radio-label" for="multi-range-1"
+                    >$10</label
+                  >
+                </div>
+                <div class="custom-radio">
+                  <input
+                    class="custom-radio-input"
+                    id="multi-range-2"
+                    name="radiobutton"
+                    type="radio"
+                  />
+                  <label class="custom-radio-elem" for="multi-range-2"></label>
+                  <label class="custom-radio-label" for="multi-range-2"
+                    >$10-$100</label
+                  >
+                </div>
+                <div class="custom-radio">
+                  <input
+                    class="custom-radio-input"
+                    id="multi-range-3"
+                    name="radiobutton"
+                    type="radio"
+                  />
+                  <label class="custom-radio-elem" for="multi-range-3"></label>
+                  <label class="custom-radio-label" for="multi-range-3"
+                    >$100-$500</label
+                  >
+                </div>
+                <div class="custom-radio">
+                  <input
+                    class="custom-radio-input"
+                    id="multi-range-4"
+                    name="radiobutton"
+                    type="radio"
+                  />
+                  <label class="custom-radio-elem" for="multi-range-4"></label>
+                  <label class="custom-radio-label" for="multi-range-4"
+                    >$500</label
+                  >
+                </div>
+                <div class="custom-radio">
+                  <input
+                    class="custom-radio-input"
+                    id="multi-range-5"
+                    name="radiobutton"
+                    type="radio"
+                  />
+                  <label class="custom-radio-elem" for="multi-range-5"></label>
+                  <label class="custom-radio-label" for="multi-range-5"
+                    >$All</label
+                  >
+                </div>
+              </div>
+              <div class="sidebar-content-inner">
+                <h3>Category</h3>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-1"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-1"></label>
+                  <label class="custom-check-label" for="category-1"
+                    >Cell Phones <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-2"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-2"></label>
+                  <label class="custom-check-label" for="category-2"
+                    >Computers & Tablets <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-3"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-3"></label>
+                  <label class="custom-check-label" for="category-3"
+                    >Cell Phone Accessories <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-4"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-4"></label>
+                  <label class="custom-check-label" for="category-4"
+                    >Appliances <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-5"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-5"></label>
+                  <label class="custom-check-label" for="category-5"
+                    >Audio <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-6"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-6"></label>
+                  <label class="custom-check-label" for="category-6"
+                    >iPhone Accessories <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-7"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-7"></label>
+                  <label class="custom-check-label" for="category-7"
+                    >Cameras & Camcorders <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-8"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-8"></label>
+                  <label class="custom-check-label" for="category-8"
+                    >iPhone Cases & Clips <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-9"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-9"></label>
+                  <label class="custom-check-label" for="category-9"
+                    >TV & Home Theater <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="category-10"
+                    name="category"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="category-10"></label>
+                  <label class="custom-check-label" for="category-10"
+                    >Small Kitchen Appliances<span>1920</span></label
+                  >
+                </div>
+              </div>
+              <div class="sidebar-content-inner">
+                <h3>Brand</h3>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-1"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-1"></label>
+                  <label class="custom-check-label" for="brand-1"
+                    >Insigni <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-2"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-2"></label>
+                  <label class="custom-check-label" for="brand-2"
+                    >Samsung<span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-3"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-3"></label>
+                  <label class="custom-check-label" for="brand-3"
+                    >Speck <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-4"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-4"></label>
+                  <label class="custom-check-label" for="brand-4"
+                    >Apple <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-5"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-5"></label>
+                  <label class="custom-check-label" for="brand-5"
+                    >HP <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-6"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-6"></label>
+                  <label class="custom-check-label" for="brand-6"
+                    >Sony <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-7"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-7"></label>
+                  <label class="custom-check-label" for="brand-7"
+                    >Metra<span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-8"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-8"></label>
+                  <label class="custom-check-label" for="brand-8"
+                    >Dyne <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-9"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-9"></label>
+                  <label class="custom-check-label" for="brand-9"
+                    >LG <span>1920</span></label
+                  >
+                </div>
+                <div class="custom-check">
+                  <input
+                    class="custom-check-input"
+                    id="brand-10"
+                    name="brand"
+                    type="checkbox"
+                  />
+                  <label class="custom-check-elem" for="brand-10"></label>
+                  <label class="custom-check-label" for="brand-10"
+                    >Canon<span>1920</span></label
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="#" class="sidebar-btn">Clear all filters</a>
+          </aside>
+          <section class="card-containers">
+            <div class="results">
+              <p>7,618 results found</p>
+              <a class="likes"></a>
+            </div>
+            <div class="search-panel">
+              <form action="" method="GET">
+              <input type="text" placeholder="search" />
+            </form>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-1.png" alt="Les Paul Custom" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="rate">5.0</span>
+                    <span class="price">$679</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Custom</h4>
+                    <p>The Iconic Les Paul at Its Classiest</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span>
+                   </a>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-2.png" alt="Les Paul Prophecy" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$899</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Prophecy</h4>
+                    <p>
+                      Featuring Fishman Fluence Pickups With Custom Voicings!
+                    </p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span></a>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-3.png" alt="Les Paul Modern" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$649</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Modern</h4>
+                    <p>For Those Who Demand More</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span> Wishlist</span></a>
+                  <a href="#" class="add-to-cart">
+                    <span> Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-4.png" alt="Les Paul Standard 60s" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$599</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Standard 60s</h4>
+                    <p>Featuring ProBucker™ Humbuckers</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-1.png" alt="Les Paul Custom" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="rate">5.0</span>
+                    <span class="price">$679</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Custom</h4>
+                    <p>The Iconic Les Paul at Its Classiest</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span>
+                   </a>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-2.png" alt="Les Paul Prophecy" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$899</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Prophecy</h4>
+                    <p>
+                      Featuring Fishman Fluence Pickups With Custom Voicings!
+                    </p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span></a>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-3.png" alt="Les Paul Modern" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$649</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Modern</h4>
+                    <p>For Those Who Demand More</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span> Wishlist</span></a>
+                  <a href="#" class="add-to-cart">
+                    <span> Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-4.png" alt="Les Paul Standard 60s" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="price">$599</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Standard 60s</h4>
+                    <p>Featuring ProBucker™ Humbuckers</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-container-inner">
+                <div class="card-top">
+                  <div class="card-image">
+                    <img src="img/lp-1.png" alt="Les Paul Custom" />
+                  </div>
+                  <div class="rate-and-price">
+                    <span class="rate">5.0</span>
+                    <span class="price">$679</span>
+                  </div>
+                  <div class="card-description">
+                    <h4>Les Paul Custom</h4>
+                    <p>The Iconic Les Paul at Its Classiest</p>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <a href="#" class="wishlist">
+                    <span>Wishlist</span>
+                  </a>
+                  <a href="#" class="add-to-cart">
+                    <span>Add to cart</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
 
-<body>
-
-</body>
-
+        <div class="pagination">
+          <a href="#" class="arrow"></a>
+          <div class="pagination-bg">
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+          </div>
+          <a href="#" class="arrow"></a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
